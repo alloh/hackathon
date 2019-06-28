@@ -1,0 +1,407 @@
+{
+	"info": {
+		"_postman_id": "5869dd0e-66ad-4be7-bf7b-21cca56937d8",
+		"name": "movie",
+		"description": "Movie collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/saf/user/filter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "ORIGIN-API",
+						"value": "SAF",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBRE1JTkBHTUFJTC5DT00iLCJhdWRpZW5jZSI6InVua25vd24iLCJjcmVhdGVkIjoxNTU3Mzg4NzEzNjU2LCJyZXNldCI6MTU1NzM4ODcxMzY1NiwiZXhwIjoxNTU3MzkwNTEzfQ.4i_Hlqk3bQhrdbipvYlWuDval6QgsXfeY_lPRhPrS9VpxmLTbMpEzLCfALFVg7ffptHnuleeKUihEd0i95FK5Q",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					},
+					{
+						"key": "ORIGIN-API",
+						"value": "SAF",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/saf/user/filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saf",
+						"user",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/saf/user/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "ORIGIN-API",
+						"value": "SAF",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBRE1JTkBHTUFJTC5DT00iLCJhdWRpZW5jZSI6InVua25vd24iLCJjcmVhdGVkIjoxNTU3Mzg4NzEzNjU2LCJyZXNldCI6MTU1NzM4ODcxMzY1NiwiZXhwIjoxNTU3MzkwNTEzfQ.4i_Hlqk3bQhrdbipvYlWuDval6QgsXfeY_lPRhPrS9VpxmLTbMpEzLCfALFVg7ffptHnuleeKUihEd0i95FK5Q",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					},
+					{
+						"key": "ORIGIN-API",
+						"value": "SAF",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstname\": \"Admin\",\n    \"lastname\": \"Admin\",\n    \"username\": \"Admin\",\n    \"password\": \"Admin\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/saf/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saf",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/saf/user/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "ORIGIN-API",
+						"value": "SAF",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBRE1JTkBHTUFJTC5DT00iLCJhdWRpZW5jZSI6InVua25vd24iLCJjcmVhdGVkIjoxNTU3Mzg4NzEzNjU2LCJyZXNldCI6MTU1NzM4ODcxMzY1NiwiZXhwIjoxNTU3MzkwNTEzfQ.4i_Hlqk3bQhrdbipvYlWuDval6QgsXfeY_lPRhPrS9VpxmLTbMpEzLCfALFVg7ffptHnuleeKUihEd0i95FK5Q",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					},
+					{
+						"key": "ORIGIN-API",
+						"value": "SAF",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Admin\",\n    \"password\": \"Admin\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/saf/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saf",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/saf/movies/filter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "ORIGIN-API",
+						"value": "SAF",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJBRE1JTkBHTUFJTC5DT00iLCJhdWRpZW5jZSI6InVua25vd24iLCJjcmVhdGVkIjoxNTU3Mzg4NzEzNjU2LCJyZXNldCI6MTU1NzM4ODcxMzY1NiwiZXhwIjoxNTU3MzkwNTEzfQ.4i_Hlqk3bQhrdbipvYlWuDval6QgsXfeY_lPRhPrS9VpxmLTbMpEzLCfALFVg7ffptHnuleeKUihEd0i95FK5Q",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					},
+					{
+						"key": "ORIGIN-API",
+						"value": "SAF",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Admin\",\n    \"password\": \"Admin\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/saf/movies/filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saf",
+						"movies",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/actuator/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/actuator/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/saf/movies/filter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					},
+					{
+						"key": "ORIGIN-API",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrd2FsaWJvcmEiLCJhdWRpZW5jZSI6InVua25vd24iLCJjcmVhdGVkIjoxNTU3NDkwMzE1ODI4LCJyZXNldCI6MTU1NzQ5MDMxNTgyOCwiZXhwIjoxNTU3NDkyMTE1fQ.Mj3Xg77m6cN1KApMljG7Cb5VR4Nir4JoYwwoLq1JKmebdYfdU3K_uTL4vmofK9b66cQFAcS3IwW63eEBz7MhlQ",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Admin\",\n    \"password\": \"Admin\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/saf/movies/filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"movies",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/saf/movies/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					},
+					{
+						"key": "ORIGIN-API",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrd2FsaWJvcmEiLCJhdWRpZW5jZSI6InVua25vd24iLCJjcmVhdGVkIjoxNTU3NDkwMzE1ODI4LCJyZXNldCI6MTU1NzQ5MDMxNTgyOCwiZXhwIjoxNTU3NDkyMTE1fQ.Mj3Xg77m6cN1KApMljG7Cb5VR4Nir4JoYwwoLq1JKmebdYfdU3K_uTL4vmofK9b66cQFAcS3IwW63eEBz7MhlQ",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null,\n    \"title\": \"GOOD TROUBLE\",\n    \"description\": \"GOOD TROUBLE\",\n    \"recommendation\": \"GOOD TROUBLE\",\n    \"rating\": 1,\n    \"watched\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/saf/movies/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saf",
+						"movies",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/saf/movies/edit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					},
+					{
+						"key": "ORIGIN-API",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrd2FsaWJvcmEiLCJhdWRpZW5jZSI6InVua25vd24iLCJjcmVhdGVkIjoxNTU3NDkwNzI1Nzk5LCJyZXNldCI6MTU1NzQ5MDcyNTc5OSwiZXhwIjoxNTU3NDkyNTI1fQ.KvShkjUZUXIUiWevQrrvbpXTj027ScviMf823LYKMIyJhZh_lKr3rK7S4sQeqesZ4c8VaLMKt3QweSzby4_0CA",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"6fd09916-82e1-46fb-87b5-5ef06d325710\",\n    \"title\": \"Murder Mystery\",\n    \"description\": \"Murder Mystery\",\n    \"recommendation\": \"Murder Mystery\",\n    \"rating\": 2,\n    \"watched\": false\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/saf/movies/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saf",
+						"movies",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/saf/movies/remove/6fd09916-82e1-46fb-87b5-5ef06d325710",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					},
+					{
+						"key": "ORIGIN-API",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrd2FsaWJvcmEiLCJhdWRpZW5jZSI6InVua25vd24iLCJjcmVhdGVkIjoxNTU3NDkwNzI1Nzk5LCJyZXNldCI6MTU1NzQ5MDcyNTc5OSwiZXhwIjoxNTU3NDkyNTI1fQ.KvShkjUZUXIUiWevQrrvbpXTj027ScviMf823LYKMIyJhZh_lKr3rK7S4sQeqesZ4c8VaLMKt3QweSzby4_0CA",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"6fd09916-82e1-46fb-87b5-5ef06d325710\",\n    \"title\": \"Chernobyl\",\n    \"description\": \"Chernobyl\",\n    \"recommendation\": \"Chernobyl\",\n    \"rating\": 2,\n    \"watched\": false\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/safi/movies/remove/6fd09916-82e1-46fb-87b5-5ef06d325710",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saf",
+						"movies",
+						"remove",
+						"6fd09916-82e1-46fb-87b5-5ef06d325710"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/saf/movies/sortMovies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					},
+					{
+						"key": "ORIGIN-API",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrd2FsaWJvcmEiLCJhdWRpZW5jZSI6InVua25vd24iLCJjcmVhdGVkIjoxNTU3NDkxNTQwNDAyLCJyZXNldCI6MTU1NzQ5MTU0MDQwMiwiZXhwIjoxNTU3NDkzMzQwfQ.7lvqSpWcHahEvFApcbNBjtJW9OrkDp_XcUe98vGw1KsAP2hD4r95Cnwdk_DT_yFNSI_6SbOpEfGI23Ar97xhCA",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": null,\n    \"title\": null,\n    \"description\": null,\n    \"recommendation\": null,\n    \"rating\": 3,\n    \"watched\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/saf/movies/sortMovies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saf",
+						"movies",
+						"sortMovies"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
