@@ -41,7 +41,7 @@ public class UserFacadeImpl implements UserFacade{
 	@Override
 	public ResponseEntity<Add> createUser(UserObj filter) throws Exception {
 		//check if the username exists
-		ApplicationUser exists = applicationUserRepository.findByUserName(filter.getUserName());
+		ApplicationUser exists = applicationUserRepository.findByUsername(filter.getUserName());
 		if(exists!=null){
 			throw new PreconditionFailedException(userExists);
 		}

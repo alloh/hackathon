@@ -98,7 +98,7 @@ public class UserAuthServiceImpl implements UserAuthService {
 		logger.debug("Load Client");
 		User userDetails = null;
 
-			final ApplicationUser selfServiceUser = selfServiceUserRepository.findByUserName(userName);
+			final ApplicationUser selfServiceUser = selfServiceUserRepository.findByUsername(userName);
 			if (selfServiceUser != null) {
 				userDetails = new User(selfServiceUser, selfServiceUser.getUsername(), selfServiceUser.getPassword(),
 						authorities);
@@ -110,7 +110,7 @@ public class UserAuthServiceImpl implements UserAuthService {
 
 	@Override
 	public Boolean changePassword(String userName, String newPassword) {
-		final ApplicationUser selfServiceUser = selfServiceUserRepository.findByUserName(userName);
+		final ApplicationUser selfServiceUser = selfServiceUserRepository.findByUsername(userName);
 		if (selfServiceUser != null) {
 			selfServiceUser.setPassword(encoder.encode(newPassword));
 			selfServiceUserRepository.save(selfServiceUser);

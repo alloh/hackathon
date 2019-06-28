@@ -1,9 +1,9 @@
 {
 	"info": {
 		"_postman_id": "5869dd0e-66ad-4be7-bf7b-21cca56937d8",
-		"name": "movie",
-		"description": "Movie collections",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"name": "MovieData",
+		"description": "MovieData ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/MovieData.json"
 	},
 	"item": [
 		{
